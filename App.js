@@ -15,17 +15,17 @@ const App = () => {
         <Stack.Screen 
           name="Home" 
           component={HomeScreen} 
-          options={{ title: '首页' }} 
+          options={{ title: 'Home' }} 
         />
         <Stack.Screen 
           name="Cart" 
           component={CartScreen} 
-          options={{ title: '购物车' }} 
+          options={{ title: 'Cart' }} 
         />
          <Stack.Screen 
           name="PaymentSuccess" 
           component={PaymentSuccessScreen} 
-          options={{ title: '付款成功' }} 
+          options={{ title: 'Success!' }} 
         />
       </Stack.Navigator>
     </NavigationContainer>

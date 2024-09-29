@@ -4,9 +4,9 @@ import { View, Text, Button, StyleSheet } from 'react-native';
 const CartScreen = ({navigation} ) => {
     // const navigation = useNavigation();
   return (
-    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: 'lightcoral' }}>
-      <Text>购物车页面</Text>
-      <Button title="查看购物车" onPress={() => navigation.navigate('PaymentSuccess')} />
+    <View style={styles.container}>
+      <Text style={styles.title}>Shopping Cart</Text>
+      <Button title="Check Out" onPress={() => navigation.navigate('PaymentSuccess')} />
     </View>
   );
 };
@@ -16,7 +16,7 @@ const styles = StyleSheet.create({
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
-      backgroundColor: 'lightblue',
+      backgroundColor: 'lightcoral',
     },
     title: {
       fontSize: 24,

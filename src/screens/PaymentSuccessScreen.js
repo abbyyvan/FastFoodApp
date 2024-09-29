@@ -5,8 +5,8 @@ import { View, Text, Button, StyleSheet } from 'react-native';
 const PaymentSuccessScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>付款成功!</Text>
-      <Button title="返回首页" onPress={() => navigation.navigate('Home')} />
+      <Text style={styles.title}>Payment Success!</Text>
+      <Button title="Continue Shopping" onPress={() => navigation.navigate('Home')} />
     </View>
   );
 };
