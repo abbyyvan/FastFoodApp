@@ -1,12 +1,15 @@
 // src/screens/PaymentSuccessScreen.js
 import React from 'react';
-import { View, Text, Button, StyleSheet } from 'react-native';
+import {View, Text, Button, StyleSheet} from 'react-native';
 
-const PaymentSuccessScreen = ({ navigation }) => {
+const PaymentSuccessScreen = ({navigation}) => {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Payment Success!</Text>
-      <Button title="Continue Shopping" onPress={() => navigation.navigate('Home')} />
+      <Button
+        title="Continue Shopping"
+        onPress={() => navigation.navigate('Home')}
+      />
     </View>
   );
 };
